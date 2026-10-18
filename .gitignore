@@ -1,0 +1,74 @@
+# -------------------------------------------------------------
+# .gitignore — Emotion Detection (4 ML/DL Models)
+# Files and folders listed here are NOT tracked by Git.
+# -------------------------------------------------------------
+
+# --- Operating system ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Environment variables & secrets ---
+.env
+.env.local
+.env.*.local
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+checkpoints/
+
+# --- IDEs / editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Trained models & weights ---
+# Keep the repo lightweight; these are reproduced via the notebooks.
+*.h5
+*.keras
+*.ckpt
+*.pkl
+!scaler_svm_emotion.pkl
+*.joblib
+*.onnx
+*.pb
+*.tflite
+*.pt
+*.pth
+*.safetensors
+
+# --- Large datasets ---
+*.npy
+*.npz
+*.hdf5
+*.parquet
+
+# --- Media / recordings ---
+*.mp4
+*.avi
+*.mov
+
+# --- Notebook outputs (strip before committing) ---
+# jupyter nbconvert --clear-output --inplace *.ipynb
+
+# End of .gitignore
