@@ -219,12 +219,5 @@ Trained model artifacts are **not** included in the repository (see [.gitignore]
 
 ---
 
-## Limitations & Future Work
-
-- Haar cascades are sensitive to pose and lighting; a modern face detector (e.g. MTCNN, RetinaFace) would improve robustness
-- Class imbalance in RAF-DB (Disgust is under-represented) remains the main source of error
-- Planned: video-file inference, model switching from the GUI, and a lightweight ONNX export for faster inference
-
----
 
 *Academic project — Department of Data Science & AI, ENSA Tétouan.*
